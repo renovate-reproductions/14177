@@ -12,5 +12,5 @@ test:
   stage: simple
   script:
     - echo hello
-    - exit 1
+    - sleep 300
 
