@@ -1,0 +1,16 @@
+---
+include:
+  - project: 'oberhaus77/renovate-test'
+    ref: main
+    file: '/.gitlab-ci-template.yml'
+
+stages:
+  - simple
+
+test:
+  image: alpine:latest
+  stage: simple
+  script:
+    - echo hello
+    - exit 1
+
