@@ -1,7 +1,7 @@
 ---
 include:
   - project: 'oberhaus77/renovate-test'
-    ref: main
+    ref: 1.0.0
     file: '/.gitlab-ci-template.yml'
 
 stages:
