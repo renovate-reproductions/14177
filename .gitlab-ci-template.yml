@@ -5,3 +5,4 @@ test2:
   stage: simple
   script:
     - echo test 2
+    - echo change to job test2
