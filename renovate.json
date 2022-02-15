@@ -7,9 +7,6 @@
   "extends": [
     "docker:enableMajor",
     "group:recommended",
-    "group:monorepos",
-    "docker:enableMajor",
-    "group:recommended",
     "group:monorepos"
   ],
   "labels": ["Renovate"],
