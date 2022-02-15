@@ -1,15 +1,17 @@
 {
-  "dependencyDashboard" : true,
-  "dependencyDashboardAutoclose" : true,
+  "dependencyDashboard": true,
+  "dependencyDashboardAutoclose": true,
   "semanticCommitType": "cicd",
   "rangeStrategy": "auto",
-  "packageRules": [
-    {
-      "matchPackageNames": ["@rocket.chat/apps-engine"],
-      "enabled": false
-    }
+  "packageRules": [],
+  "extends": [
+    "docker:enableMajor",
+    "group:recommended",
+    "group:monorepos",
+    "docker:enableMajor",
+    "group:recommended",
+    "group:monorepos"
   ],
-  "extends": ["docker:enableMajor", "group:recommended", "group:monorepos"],
-  "labels": [ "Renovate" ],
+  "labels": ["Renovate"],
   "pinDigests": true
 }
