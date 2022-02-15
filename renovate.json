@@ -1,6 +1,13 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "automergeType": "pr",
-  "prCreation": "immediate",
-  "packageRules": []
+  "semanticCommitType": "cicd",
+  "rangeStrategy": "auto",
+  "packageRules": [
+    {
+      "matchPackageNames": ["@rocket.chat/apps-engine"],
+      "enabled": false
+    }
+  ],
+  "extends": ["docker:enableMajor", "group:recommended", "group:monorepos"],
+  "labels": [ "Renovate" ],
+  "pinDigests": true
 }
